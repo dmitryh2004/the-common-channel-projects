@@ -58,6 +58,16 @@ img.preview-image {
     height: 200px; 
     object-fit: cover;
 }
+img.preview-image.float-right {
+    float: none;
+}
+
+@media(min-width: 768px) {
+    img.preview-image.float-right {
+        float: right;
+    }
+}
+
 
 div#back {
     position: absolute;
