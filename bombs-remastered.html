@@ -2,6 +2,7 @@
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/common.css" rel="stylesheet" type="text/css">
+        <link href="css/carousels.css" rel="stylesheet" type="text/css">
         <link rel="icon" type="image/png" href="img/channel-icon.png">
         <meta charset="utf8">
         <title>Bombs Remastered - The common channel</title>
@@ -65,6 +66,35 @@
                             </ul>
                         </p>
                     </li>
+                    <li class="list-group-item">
+                        <h4>Скриншоты</h4>
+                        <div id="screenshotCarousel" class="carousel slide carousel-fade">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#screenshotCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#screenshotCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#screenshotCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="img/bombs-remastered/1.png" class="d-block w-100" alt="..." onerror="this.onerror=null; this.src='img/placeholder-image.png';">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="img/bombs-remastered/2.png" class="d-block w-100" alt="..." onerror="this.onerror=null; this.src='img/placeholder-image.png';">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="img/bombs-remastered/3.png" class="d-block w-100" alt="..." onerror="this.onerror=null; this.src='img/placeholder-image.png';">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </li>
                     <li class="list-group-item"> <!-- инструкция по установке -->
                         <h4>Как запустить</h4>
                         <ol>
@@ -77,7 +107,7 @@
                     </li>
                     <li class="list-group-item"> <!-- ссылки на билды или веб-версии -->
                         <h4>Ссылки</h4>
-                        Они скоро будут, точно :)
+                        <a target="_blank" href="https://drive.google.com/drive/folders/1QPP3LuJL7OEWCLpY0kmC6rTW0dHxMORN?usp=drive_link" class="btn btn-primary external">Google drive</a>
                     </li>
                 </ul>
             </div>
@@ -90,4 +120,13 @@
             </div>
         </footer>
     </body>
+    <!-- Инициализация каруселей -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+const carouselElement = document.querySelector('#screenshotCarousel')
+
+const carousel = new bootstrap.Carousel(carouselElement, {
+  interval: 2000,
+  touch: false
+})
+    </script>
 </html>
