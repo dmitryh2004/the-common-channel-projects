@@ -1,0 +1,114 @@
+<html data-bs-theme="dark">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/common.css" rel="stylesheet" type="text/css">
+        <link href="css/carousels.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" href="img/channel-icon.png">
+        <meta charset="utf8">
+        <title>Multiplayered 2 - The common channel</title>
+    </head>
+    <body>
+        <header>
+            <h2>The common channel - Multiplayered 2</h2>
+            <div id="back">
+                <a href="index.html" class="btn btn-secondary">На главную</a>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <ul class="list-group">
+                    <li class="list-group-item"> <!-- название игры, картинка, краткое описание -->
+                        <h4 class="text-center">Multiplayered 2</h4>
+                        <img src="img/multiplayered-2-preview.png" class="preview-image float-right" onerror="this.onerror=null; this.src='img/placeholder-image.png';" alt="...">
+                        <p>
+                            Игра про испытания боевых роботов в самых экстремальных условиях.
+                        </p>
+                    </li>
+                    <li class="list-group-item"> <!-- более подробное описание игры -->
+                        <h4>Описание</h4>
+                        <p>
+                            Неизвестная компания решила разработать модель боевого робота - до сих пор так и не понятно, зачем он ей понадобился. Одним из испытаний, которые компания устраивает для тестирования роботов, стало сражение опытной партии из 8 машин в безымянной выжженной дотла деревне.
+                        </p>
+                        <p>
+                            Вы управляете одним из 8 роботов. Ваша цель - остаться единственным уцелевшим роботом в деревне. Для этого необходимо победить остальных игроков, управляющих другими роботами.
+                        </p>
+                        <p>
+                            Робот имеет 250 очков прочности, а также следующее вооружение:
+                            <ul>
+                                <li>Пулемет, стреляющий мелкими пулями. Интервал между выстрелами небольшой, но из-за технического несовершенства пулемет может выпустить максимум 6 пуль за одну очередь - после этого ему требуется немного остыть. <i>Пули наносят по 5 ед. урона</i>;</li>
+                                <li>Пушка, стреляющая снарядами. Перезарядка - 5 секунд, наносимый урон - 75 ед.</li>
+                            </ul>
+                            Прицеливание осуществляется с помощью двух лазеров - для каждого орудия свой лазер. На данный момент лазеры имеют очень низкую мощность, поэтому прицельный огонь на большом расстоянии крайне неэффективен - в том числе из-за отсутствия системы захвата целей и снайперского режима.
+                        </p>
+                        <p>
+                            Роботы-конкуренты - не единственное, что вас ждет в этой деревне. В этих местах часто встречаются огненные смерчи, которые сжигают все на своем пути. По неизвестной причине они притягиваются к металлическим объектам, поэтому держитесь от них подальше: подъехав слишком близко, вы рискуете стать целью для смерча.
+                        </p>
+                        <p>
+                            Оказавшись рядом со смерчем, вы будете получать по 5 ед. урона каждые 0.25 секунды (20 ед. урона в секунду). Если вы окажетесь внутри него, то урон увеличится до 10 ед. каждые 0.25 секнуды (40 ед. урона в секунду).
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Скриншоты</h4>
+                        <div id="screenshotCarousel" class="carousel slide carousel-fade">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#screenshotCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#screenshotCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#screenshotCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="img/multiplayered-2/1.png" class="d-block w-100" alt="..." onerror="this.onerror=null; this.src='img/placeholder-image.png';">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="img/multiplayered-2/2.png" class="d-block w-100" alt="..." onerror="this.onerror=null; this.src='img/placeholder-image.png';">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="img/multiplayered-2/3.png" class="d-block w-100" alt="..." onerror="this.onerror=null; this.src='img/placeholder-image.png';">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item"> <!-- инструкция по установке -->
+                        <h4>Как запустить</h4>
+                        <ol>
+                            <li>Перейдите по ссылке ниже</li>
+                            <li>Скачайте .zip архив</li>
+                            <li>Распакуйте куда-нибудь</li>
+                            <li>Запустите Multiplayered 2.exe</li>
+                            <li>Готово!</li>
+                        </ol>
+                    </li>
+                    <li class="list-group-item"> <!-- ссылки на билды или веб-версии -->
+                        <h4>Ссылки</h4>
+                        Under construction
+                        <!--<a target="_blank" href="https://drive.google.com/drive/folders/1NnvadLTysnfWdY-XsxjTAXY85-SGs81t?usp=sharing" class="btn btn-primary external">Google drive</a>-->
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p>The common channel, 2025-2025</p>
+            <div id="channel_link">
+                <img src="img/channel-icon.png">
+                <a href="https://t.me/the_common_channel" class="btn btn-secondary">Ссылка на канал</a>
+            </div>
+        </footer>
+    </body>
+    <!-- Инициализация каруселей -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+const carouselElement = document.querySelector('#screenshotCarousel')
+
+const carousel = new bootstrap.Carousel(carouselElement, {
+  interval: 2000,
+  touch: false
+})
+    </script>
+</html>
