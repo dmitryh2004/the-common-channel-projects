@@ -1,0 +1,130 @@
+<html data-bs-theme="dark">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/common.css" rel="stylesheet" type="text/css">
+        <link href="css/carousels.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" href="img/channel-icon.png">
+        <meta charset="utf8">
+        <title>Into the Hell - The common channel</title>
+    </head>
+    <body>
+        <header>
+            <h2>The common channel (в соавторстве) - Into the Hell</h2>
+            <div id="back">
+                <a href="index.html" class="btn btn-secondary">На главную</a>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <ul class="list-group">
+                    <li class="list-group-item"> <!-- название игры, картинка, краткое описание -->
+                        <h4 class="text-center">Into the Hell</h4>
+                        <img src="img/into-the-hell-preview.png" class="preview-image float-right" onerror="this.onerror=null; this.src='img/placeholder-image.png';" alt="...">
+                        <p>
+                            2D-игра с видом сверху в жанре rogue like. Нет, это ни в коем случае не клон Soul Knight...
+                        </p>
+                    </li>
+                    <li class="list-group-item"> <!-- более подробное описание игры -->
+                        <h4>Описание</h4>
+                        <p>
+                            Игра представляет из себя типичный Rogue-like с видом сверху (2D). Игрок спускается в подземелья, начиная с холодных горных пещер, все ниже и ниже, пока не достигнет ада.
+                        </p>
+                        <p>
+                            В игре всего представлено 3 локации:
+                            <ol>
+                                <li>Горные пещеры - локация №1, с которой игрок начнет игру. Враги достаточно слабы по сравнению с игроком.</li>
+                                <li>Заброшенная шахта - локация №2. Враги сильнее по сравнению с локацией №1.</li>
+                                <li>Адский замок - локация №3. Враги сильнее по сравнению с локацией №2 и могут убить игрока с двух-трех ударов.</li>
+                            </ol>
+                            Каждая локация представляет собой набор из 5 случайно генерируемых уровней. Каждый такой уровень - набор комнат с врагами. В конце пятого уровня игрока будет ждать босс - для каждой локации он свой.
+                        </p>
+                        <p>
+                            В комнатах локации могут присутствовать ловушки, которые будут мешать игроку в прохождении игры. Чем глубже игрок спускается в подземелье, тем больше ловушек будет расставлено в комнатах.
+                        </p>
+                        <p>
+                            С врагов при убийстве падают монеты, которые подбирает игрок. В перерывах между зачисткой уровней игрок может прокачать свое вооружение и броню и купить расходники - зелья и взрывные стрелы.
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Управление</h4>
+                        <ul>
+                            <li>
+                                WASD - перемещение;
+                            </li>
+                            <li>
+                                Shift - рывок в сторону взгляда игрока;
+                            </li>
+                            <li>
+                                ЛКМ - обычная атака;
+                            </li>
+                            <li>
+                                ПКМ - альтернативная атака;
+                            </li>
+                            <li>
+                                H - лечение;
+                            </li>
+                            <li>
+                                E - взаимодействие с объектами.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Скриншоты</h4>
+                        <div id="screenshotCarousel" class="carousel slide carousel-fade">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#screenshotCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#screenshotCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="img/into-the-hell/1.png" class="d-block w-100" alt="..." onerror="this.onerror=null; this.src='img/placeholder-image.png';">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="img/into-the-hell/2.png" class="d-block w-100" alt="..." onerror="this.onerror=null; this.src='img/placeholder-image.png';">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item"> <!-- инструкция по установке -->
+                        <h4>Как запустить</h4>
+                        <ol>
+                            <li>Перейдите по ссылке ниже</li>
+                            <li>Скачайте .zip архив</li>
+                            <li>Распакуйте куда-нибудь</li>
+                            <li>Запустите Into the Hell.exe</li>
+                            <li>Готово!</li>
+                        </ol>
+                    </li>
+                    <li class="list-group-item"> <!-- ссылки на билды или веб-версии -->
+                        <h4>Ссылки</h4>
+                        <a target="_blank" href="https://drive.google.com/drive/folders/1Sw4jTAY2jc7f2RQ7wcc1lplzvSC94mbT?usp=sharing" class="btn btn-primary external">Google drive</a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p>The common channel, 2025-2025</p>
+            <div id="channel_link">
+                <img src="img/channel-icon.png">
+                <a href="https://t.me/the_common_channel" class="btn btn-secondary">Ссылка на канал</a>
+            </div>
+        </footer>
+    </body>
+    <!-- Инициализация каруселей -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+const carouselElement = document.querySelector('#screenshotCarousel')
+
+const carousel = new bootstrap.Carousel(carouselElement, {
+  interval: 2000,
+  touch: false
+})
+    </script>
+</html>
