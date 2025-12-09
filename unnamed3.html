@@ -1,0 +1,105 @@
+<html data-bs-theme="dark">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/common.css" rel="stylesheet" type="text/css">
+        <link href="css/carousels.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" href="img/channel-icon.png">
+        <meta charset="utf8">
+        <title>Unnamed 3 - The common channel</title>
+    </head>
+    <body>
+        <header>
+            <h2>The common channel - Unnamed 3</h2>
+            <div id="back">
+                <a href="index.html" class="btn btn-secondary">На главную</a>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <ul class="list-group">
+                    <li class="list-group-item"> <!-- название игры, картинка, краткое описание -->
+                        <h4 class="text-center">Unnamed 3</h4>
+                        <img src="img/unnamed-3-preview.png" class="preview-image float-right" onerror="this.onerror=null; this.src='img/placeholder-image.png';" alt="...">
+                        <p>
+                            Классическая головоломка в нестандартном исполнении.
+                        </p>
+                    </li>
+                    <li class="list-group-item"> <!-- более подробное описание игры -->
+                        <h4>Описание</h4>
+                        <p>
+                            Казалось бы, классическая головоломка, в которой необходимо привести шарик к финишу, поворачивая уровень вокруг своей оси. Но в этой игре вам придется подвигаться, чтобы найти подходящий угол для поворота уровня.
+                        </p>
+                        <p>
+                            В игре представлено 9 уровней, а также множество интерактивных объектов, с которыми нужно взаимодействовать для прохождения игры:
+                            <ul>
+                                <li>Препятствия - белые блоки, расположенные внутри уровня. Мешают шарику достичь своей цели;</li>
+                                <li>Магниты - притягивают к себе препятствия;</li>
+                                <li>Силовое поле - блокирует проход для шарика и препятствий. Управляется датчиком своего цвета;</li>
+                                <li>Датчик - активируется, если замечает шарик или препятствие в блоке перед собой. Управляет силовым полем своего цвета.</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Скриншоты</h4>
+                        <div id="screenshotCarousel" class="carousel slide carousel-fade">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#screenshotCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#screenshotCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#screenshotCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="img/unnamed-3/1.png" class="d-block w-100" alt="..." onerror="this.onerror=null; this.src='img/placeholder-image.png';">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="img/unnamed-3/2.png" class="d-block w-100" alt="..." onerror="this.onerror=null; this.src='img/placeholder-image.png';">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="img/unnamed-3/3.png" class="d-block w-100" alt="..." onerror="this.onerror=null; this.src='img/placeholder-image.png';">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="list-group-item"> <!-- инструкция по установке -->
+                        <h4>Как запустить</h4>
+                        <ol>
+                            <li>Перейдите по ссылке ниже</li>
+                            <li>Скачайте .apk файл</li>
+                            <li>Установите его. При необходимости разрешите установку из неизвестных источников</li>
+                            <li>Запустите приложение Unnamed 3</li>
+                            <li>Готово!</li>
+                        </ol>
+                    </li>
+                    <li class="list-group-item"> <!-- ссылки на билды или веб-версии -->
+                        <h4>Ссылки</h4>
+                        <div target="_blank" href="https://drive.google.com/drive/folders/1NnvadLTysnfWdY-XsxjTAXY85-SGs81t?usp=sharing" class="btn btn-secondary disabled external">Google drive</div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p>The common channel, 2025-2025</p>
+            <div id="channel_link">
+                <img src="img/channel-icon.png">
+                <a href="https://t.me/the_common_channel" class="btn btn-secondary">Ссылка на канал</a>
+            </div>
+        </footer>
+    </body>
+    <!-- Инициализация каруселей -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+const carouselElement = document.querySelector('#screenshotCarousel')
+
+const carousel = new bootstrap.Carousel(carouselElement, {
+  interval: 2000,
+  touch: false
+})
+    </script>
+</html>
